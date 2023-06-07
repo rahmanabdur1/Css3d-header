@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+}
+
+.brand {
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+.brand span {
+    transition: 1s;
+    display: block;
+}
+
+.brand span:nth-child(1) {
+    position: absolute;
+    transform: translateY(-40px);
+    font-size: 1.2rem;
+}
+
+.icon {
+    background: #444;
+}
+
+.icon .brand span:nth-child(1) {
+    transform: translateY(10px);
+    transform: -5px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.icon .brand span:nth-child(2) {
+    transform: translateY(-50px);
+    transform: 35px;
+
+}
+
+ul li a {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    overflow: hidden;
+}
+
+.icon ul li a {
+    color: #fff;
+}
+
+ul li a span {
+    transition: 1s;
+    transition-delay: calc(0.05s * var(--i));
+}
+
+ul li a span:nth-child(2) {
+    position: absolute;
+    transform: translateY(35px);
+    font-size: 1.5rem;
+}
+
+.icon ul li a span:nth-child(2) {
+    transform: translateY(2px);
+}
+
+.icon ul li a span:nth-child(1) {
+    transform: translateY(-30px);
+}
